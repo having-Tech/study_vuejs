@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="utf=8">
+            <title>vue 시작하기!</title>
+            <script src = "https://cdn.jsdelivr.net/npm/vue"></script>
+        </head>
+        <body>
+            <div id ="start">
+                <h1>{{clacDate()}}</h1>
+                <h2>{{clacDate()}}</h2>
+                <h3>{{clacDate()}}</h3>
+            </div>
+
+            <script type = "text/javascript">
+            let app = new Vue ({
+                el: '#start',
+                date () {
+                    return {
+                        date: new Date()
+                    }
+                },
+
+                methods:{
+                    clacDate: function () {
+                        return `${this.date.getFullYear()}-${praseInt(this.date.getMonth())+1}-${this.date.getDay()}`
+                    }
+                }
+            })
+            </script>
+        </body>
+
+</html>
