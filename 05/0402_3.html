@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!</title>
+        <script src = "https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id = "start">
+            <input type="text" v-model:value="value">
+            <div v-show="isAnswer">안녕하세요!</div>
+        </div>
+
+       <script src = "text/javascript">
+        let app = new Vue({
+            el: '#start',
+            data() {
+                return {
+                    value: '',
+                    isAnswer: false
+                }
+            },
+            watch : {
+                value: function(v){
+                    this.isAnswer = true
+                }
+            }
+        })
+        </script>
+    </body>
+</html>
+
+<!--조건에 따라 렌더링이 아니라 화면에 출력 여부만 결정시 v-if보단 v-show를 사용한다.-->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!</title>
+        <script src = "https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id  = "start">
+            <h1 v-if="condition1">1</h1>
+            <h1 v-else-if="condition2">2</h1>
+            <h1 v-else>3</h1>
+        </div>
+
+        <script src = "text/javasrctipt">
+        let app = new Vue({
+            el : '#start',
+            data(){
+                return {
+                    condition1: false,
+                    condition2: false
+                }
+            }
+        })
+        </script>
+    </body>
+
+</html>
+
+<!--v-if, v-else-if, v-else 이중에 하나만 참 값이 발생하면 DOM만 렌더링된다, 만약 없다면 else가 렌더링 된다.--> >
