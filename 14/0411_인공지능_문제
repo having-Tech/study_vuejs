@@ -1,0 +1,9 @@
+1. 연습 문제 4번 - Decision tree (ID3 알고리즘 이용)
+
+2. 유전 알고리즘 (3연산자 모두 적용)
+벽돌 문제 5개 
+평가 함수 = BC/CB의 갯수
+1) CBBCC
+2) BCCBC
+3) BBCCC
+4) BCBCC
